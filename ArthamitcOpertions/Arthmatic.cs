@@ -2,7 +2,7 @@
 
 namespace ArithmeticOperations
 {
-    public class Arithmetic
+    public static class Arithmetic
     {
         public static int Sum(int x, int y)
         {
