@@ -1,27 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ArthamitcOpertions
+namespace ArithmeticOperations
 {
-   public class Arthmatic
+    public static class Arithmetic
     {
-        public int Sum(int x ,int y)
+        public static int Sum(int x, int y)
         {
             return x + y;
         }
 
-        public int Div(int x, int y)
+        public static int Div(int x, int y)
         {
+            if (y == 0)
+                throw new DivideByZeroException("Division by zero is not allowed.");
             return x / y;
         }
-        public int Sub(int x, int y)
+
+        public static int Sub(int x, int y)
         {
             return x - y;
         }
-        public int mul(int x, int y)
+
+        public static int Mul(int x, int y)
         {
             return x * y;
         }
