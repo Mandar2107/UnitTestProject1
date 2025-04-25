@@ -39,6 +39,9 @@ namespace UnitTestProject1
             Assert.AreEqual(2, Arithmetic.Div(20, 10));
             Assert.ThrowsException<DivideByZeroException>(() => Arithmetic.Div(20, 0));
             Assert.AreEqual(-4, Arithmetic.Div(20, -5));
+            Assert.IsTrue(true);
+            Assert.AreNotEqual(11, Arithmetic.Div(20, 10));
+            Assert.AreNotSame(12, Arithmetic.Div(20, 10));
         }
     }
 }
